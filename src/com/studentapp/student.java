@@ -20,6 +20,17 @@ public class student {		//the variables not having static known as instance vari
 		courses.add(course);
 		System.out.println("Student is enrolled to "+course+"successfully!!");
 	}
+	public void printStudentInfo() {
+		System.out.println("===========  Student Information  ===========");
+		System.out.println("Student Name: "+name);
+		System.out.println("Student Age: "+age);
+		System.out.println("Student studentID: "+studentID);
+		System.out.println("Enrolled for the Courses: "+courses);
+	}
+	@Override
+	public String toString() {
+		return "student [name=" + name + ", age=" + age + ", studentID=" + studentID + ", courses=" + courses + "]";
+	}
 	
 	
 }
